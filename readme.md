@@ -2,7 +2,7 @@
 <br/>
 
 * ## [Link to task page](https://github.com/DrDiman/CSS-Bayan-task)
-* ## [Link to finished task]()
+* ## [Link to finished task](https://ivsmcrew.github.io/cssBayan/cssBayan/index.html)
 <br/>
 
 <details><summary>Functional requirements(breafly):</summary>
