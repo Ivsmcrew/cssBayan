@@ -190,8 +190,10 @@ footer ul a img{
     img.icon:hover{
         filter: drop-shadow(6px 6px 20px red) invert(75%);
     }
-    .externalWrapper:hover > main > article > label > header > img.opener{
+    .externalWrapper:hover{
         cursor: pointer;
+    }
+    .externalWrapper:hover > main > article > label > header > img.opener{ 
         display: block;
     }
     label:hover {
@@ -216,7 +218,8 @@ footer ul a img{
         height: 11rem;
     }
     h2{
-        font-size: 3.8rem;
+        font-size: 3.0rem;
+        padding: 0.5rem;
     }
     
     .externalWrapper{
@@ -257,7 +260,8 @@ footer ul a img{
     }
 
     h2{
-        font-size: 3.2rem;
+        font-size: 2.2rem;
+        padding: 0.7rem
     }
     
     .externalWrapper{
