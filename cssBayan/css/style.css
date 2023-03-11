@@ -121,7 +121,15 @@ label:active{
             article header.memHeader img{
             margin-left: auto;
             }
-            
+    article figure{
+        width:0;
+        height:0;
+        margin: 0 auto;
+        padding-top: 1rem;
+
+        transition-property: width, height;
+        transition-duration: 0.3s, 0.3s;
+    }    
 
     article input{
         -webkit-appearance: none;
@@ -141,16 +149,6 @@ label:active{
         transform: rotate(45deg);
     }
     
-
-    article figure{
-        width:0;
-        height:0;
-        margin: 0 auto;
-        padding-top: 1rem;
-
-        transition-property: width, height;
-        transition-duration: 0.3s, 0.3s;
-    }
 
 footer{
     flex-shrink: 0;
