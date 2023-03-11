@@ -89,13 +89,10 @@ article.mem{
     article header.memHeader{
         border: 0.2rem solid var(--border-color);
     }
-        article header.memHeader label{
+        article header.memHeader{
             display:flex;
             align-items: center;
         }
-            article header.memHeader h2{
-                
-            }
             article header.memHeader img{
             margin-left: auto;
             }
@@ -106,9 +103,13 @@ article.mem{
         height: 0;
         width: 0
     }
-    article input:checked + figure{
+    article input:checked ~ label>figure{
         display: block;
     }
+    article input:checked + label>header>img.opener{
+        transform: rotate(45deg);
+    }
+    
 
     article figure{
         width: 80%;
