@@ -1,0 +1,141 @@
+/********************************************
+*****************ADDING FONTS****************
+********************************************/
+@font-face {
+	font-family: 'AVA';
+	src: url('../fonts/AVA/AVA.eot');
+	src: url('../fonts/AVA/AVA.woff') format('woff'), url('../fonts/AVA/AVA.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'UzSans';
+    src: url('../fonts/UzSans/UZSans-Light.eot');
+	src: url('../fonts/UzSans/UZSans-Light_1.woff') format('woff'), url('../fonts/UzSans/UZSans-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'UzSans';
+	src: url('../fonts/UzSans/UZSans-Regular.eot');
+	src: url('../fonts/UzSans/UZSans-Regular.woff') format('woff'), url('../fonts/UzSans/UZSans-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'UzSans';
+    src: url('../fonts/UzSans/UZSans-Bold.eot');
+    src: url('../fonts/UzSans/UZSans-Bold.woff') format('woff'), url('../fonts/UzSans/UZSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/********************************************
+*****************PREPARING*******************
+********************************************/
+:root{
+	--base-font: 'UzSans';
+	--base-logo-font: 'AVA';
+
+	--base-color: rgb(255, 255, 255);
+	--add-color: rgb(35, 39, 61);
+    --border-color: rgb(201, 70, 60);
+	--base-background-color: #151728;
+	--hover-color-one: rgb(226, 169, 169);
+	--hover-color-two: rgb(255, 255, 255);
+
+	box-sizing: border-box;
+	font-size: calc(0.5vw + 0.4em);
+}
+img.opener, img.icon{
+    height: 3rem;
+    width: 3rem;
+}
+h2{
+    font-size: 3rem;
+}
+
+/********************************************
+**************MAIN CSS STYLES****************
+********************************************/
+body{
+    background-color: var(--base-background-color);
+    color: var(--base-color);
+    font-family: var(--base-font);
+}
+.externalWrapper{
+    border-radius: 0.5rem;
+    max-width: 40%;
+    margin: 1rem auto;
+}
+header.mainHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+    font-family: var(--base-logo-font);
+    background-color: var(--add-color);
+    border: 0.2rem solid var(--border-color);
+    border-radius: 0.2rem;
+    font-size: 4rem;
+}
+
+article.mem{
+    margin: 1rem 0rem;
+    border: 0.2rem solid var(--border-color); 
+    border-radius: 0.2rem;            
+    background-color: var(--add-color);
+}
+    article header.memHeader{
+        border: 0.2rem solid var(--border-color);
+    }
+        article header.memHeader label{
+            display:flex;
+            align-items: center;
+        }
+            article header.memHeader h2{
+                
+            }
+            article header.memHeader img{
+            margin-left: auto;
+            }
+
+    article input{
+        -webkit-appearance: none;
+        appearance: none;
+        height: 0;
+        width: 0
+    }
+    article input:checked + figure{
+        display: block;
+    }
+
+    article figure{
+        width: 80%;
+        margin: 0 auto;
+        display: none;
+    }
+
+footer{
+    height: 4rem;
+    font-family: var(--base-logo-font);
+    background-color: var(--add-color);
+    border: 0.2rem solid var(--border-color);
+    border-radius: 0.2rem;
+    font-size: 4rem;
+}
+footer address{
+    height: 100%;
+}
+footer ul{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 60%;
+    height: 100%;
+}
+footer ul a{
+    display:flex;
+    height: 100%;
+    align-items: center;
+}
